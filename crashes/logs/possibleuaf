@@ -1,0 +1,30 @@
+    0x49379e                  xchg   ax, ax
+ →   0x4937a0 <free+0>         push   rbp
+     0x4937a1 <free+1>         mov    rbp, rsp
+     0x4937a4 <free+4>         push   r15
+     0x4937a6 <free+6>         push   r14
+     0x4937a8 <free+8>         push   rbx
+     0x4937a9 <free+9>         sub    rsp, 0x818
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "box", stopped 0x4937a0 in free (), reason: BREAKPOINT
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4937a0 → free()
+[#1] 0x7ffff7e3fb7d → _dlerror_run(operate=0x7ffff7e3f490 <dlsym_doit>, args=0x7fffffffe350)
+[#2] 0x7ffff7e3f525 → __dlsym(handle=<optimized out>, name=0x5eb7bb "__isoc99_printf")
+[#3] 0x49ff96 → cmp rax, r12
+[#4] 0x482de8 → test al, al
+[#5] 0x480fba → cmp BYTE PTR [rip+0x2272af], 0x1        # 0x6a8270
+[#6] 0x49b7ae → call 0x4aaed0
+[#7] 0x7ffff7fe0ce6 → mov rax, rbx
+[#8] 0x7ffff7fd013a → lea rdx, [rip+0x10c0f]        # 0x7ffff7fe0d50
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+gef➤  heap bins
+────────────────────────────────────────────────── Tcachebins for arena 0x7ffff7e1cb80 ──────────────────────────────────────────────────
+─────────────────────────────────────────────────── Fastbins for arena 0x7ffff7e1cb80 ───────────────────────────────────────────────────
+Fastbins[idx=0, size=0x20] 0x00
+Fastbins[idx=1, size=0x30] 0x00
+Fastbins[idx=2, size=0x40] 0x00
+Fastbins[idx=3, size=0x50] 0x00
+Fastbins[idx=4, size=0x60] 0x00
+Fastbins[idx=5, size=0x70] 0x00
+Fastbins[idx=6, size=0x80] 0x00

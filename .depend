@@ -1,0 +1,177 @@
+common/alloc.o: common/alloc.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h
+common/bits.o: common/bits.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h
+common/bytes.o: common/bytes.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h
+common/list.o: common/list.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h
+common/multibuf.o: common/multibuf.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h
+common/osdep.o: common/osdep.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h
+common/utils.o: common/utils.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h
+codecs/a52.o: codecs/a52.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h codecs/a52.h
+codecs/alac.o: codecs/alac.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h
+codecs/description.o: codecs/description.c common/internal.h \
+ common/osdep.h lsmash.h common/utils.h common/memint.h common/bytes.h \
+ common/bits.h common/multibuf.h common/list.h core/box.h core/box_type.h \
+ codecs/a52.h codecs/mp4a.h codecs/mp4sys.h codecs/description.h
+codecs/dts.o: codecs/dts.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h codecs/dts.h
+codecs/h264.o: codecs/h264.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h codecs/h264.h \
+ codecs/nalu.h
+codecs/hevc.o: codecs/hevc.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h codecs/hevc.h \
+ codecs/nalu.h
+codecs/id.o: codecs/id.c lsmash.h
+codecs/mp4sys.o: codecs/mp4sys.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h \
+ codecs/description.h codecs/mp4a.h codecs/mp4sys.h
+codecs/mp4a.o: codecs/mp4a.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h codecs/mp4a.h \
+ codecs/mp4sys.h codecs/description.h
+codecs/mp4v.o: codecs/mp4v.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h codecs/mp4a.h \
+ codecs/mp4sys.h
+codecs/nalu.o: codecs/nalu.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h codecs/nalu.h
+codecs/qt_wfex.o: codecs/qt_wfex.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h
+codecs/vc1.o: codecs/vc1.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h codecs/vc1.h
+codecs/wma.o: codecs/wma.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h
+importer/a52_imp.o: importer/a52_imp.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h importer/importer.h core/box.h \
+ core/box_type.h codecs/description.h codecs/a52.h
+importer/adts_imp.o: importer/adts_imp.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h importer/importer.h core/box.h \
+ core/box_type.h codecs/description.h codecs/mp4a.h
+importer/als_imp.o: importer/als_imp.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h importer/importer.h core/box.h \
+ core/box_type.h codecs/description.h codecs/mp4a.h
+importer/amr_imp.o: importer/amr_imp.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h importer/importer.h core/box.h \
+ core/box_type.h codecs/description.h
+importer/dts_imp.o: importer/dts_imp.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h importer/importer.h core/box.h \
+ core/box_type.h codecs/description.h codecs/dts.h
+importer/importer.o: importer/importer.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h importer/importer.h core/box.h \
+ core/box_type.h codecs/description.h
+importer/isobm_imp.o: importer/isobm_imp.c common/internal.h \
+ common/osdep.h lsmash.h common/utils.h common/memint.h common/bytes.h \
+ common/bits.h common/multibuf.h common/list.h importer/importer.h \
+ core/box.h core/box_type.h codecs/description.h core/read.h \
+ core/timeline.h
+importer/mp3_imp.o: importer/mp3_imp.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h importer/importer.h core/box.h \
+ core/box_type.h codecs/description.h codecs/mp4a.h
+importer/nalu_imp.o: importer/nalu_imp.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h importer/importer.h core/box.h \
+ core/box_type.h codecs/description.h codecs/h264.h codecs/nalu.h \
+ codecs/hevc.h
+importer/vc1_imp.o: importer/vc1_imp.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h importer/importer.h core/box.h \
+ core/box_type.h codecs/description.h codecs/vc1.h
+importer/wave_imp.o: importer/wave_imp.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h importer/importer.h core/box.h \
+ core/box_type.h codecs/description.h core/timeline.h
+core/box.o: core/box.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h \
+ core/box_default.h core/write.h core/read.h core/print.h core/timeline.h \
+ codecs/mp4a.h codecs/mp4sys.h importer/importer.h
+core/box_default.o: core/box_default.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h \
+ core/box_default.h
+core/box_type.o: core/box_type.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box_type.h
+core/chapter.o: core/chapter.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h
+core/file.o: core/file.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h core/read.h \
+ core/fragment.h importer/importer.h
+core/fragment.o: core/fragment.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h \
+ core/box_default.h core/file.h core/write.h core/fragment.h
+core/isom.o: core/isom.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h \
+ core/box_default.h core/file.h core/fragment.h core/read.h \
+ core/timeline.h core/write.h codecs/mp4a.h codecs/mp4sys.h \
+ codecs/description.h
+core/meta.o: core/meta.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h \
+ core/box_default.h
+core/print.o: core/print.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h
+core/read.o: core/read.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h \
+ core/box_default.h core/file.h core/print.h core/read.h core/write.h \
+ codecs/mp4a.h codecs/mp4sys.h codecs/description.h
+core/summary.o: core/summary.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h codecs/mp4a.h \
+ codecs/mp4sys.h codecs/description.h
+core/timeline.o: core/timeline.c common/internal.h common/osdep.h \
+ lsmash.h common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h \
+ core/timeline.h codecs/mp4a.h codecs/mp4sys.h codecs/description.h \
+ importer/importer.h
+core/write.o: core/write.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h core/box.h core/box_type.h core/write.h \
+ codecs/mp4a.h codecs/mp4sys.h codecs/description.h
+cli/cli.o: cli/cli.c common/internal.h common/osdep.h lsmash.h \
+ common/utils.h common/memint.h common/bytes.h common/bits.h \
+ common/multibuf.h common/list.h
+cli/muxer.o: cli/muxer.c cli/cli.h config.h common/osdep.h lsmash.h \
+ importer/importer.h
+cli/remuxer.o: cli/remuxer.c cli/cli.h config.h common/osdep.h lsmash.h
+cli/boxdumper.o: cli/boxdumper.c cli/cli.h config.h common/osdep.h \
+ lsmash.h
+cli/timelineeditor.o: cli/timelineeditor.c cli/cli.h config.h \
+ common/osdep.h lsmash.h

@@ -1,0 +1,16 @@
+cli/muxer: cli/muxer.o  cli/cli.o liblsmash.a 
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $<  cli/cli.o -llsmash $(LIBS)
+	-@ $(if $(STRIP), $(STRIP) $@)
+
+cli/remuxer: cli/remuxer.o  cli/cli.o liblsmash.a 
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $<  cli/cli.o -llsmash $(LIBS)
+	-@ $(if $(STRIP), $(STRIP) $@)
+
+cli/boxdumper: cli/boxdumper.o  cli/cli.o liblsmash.a 
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $<  cli/cli.o -llsmash $(LIBS)
+	-@ $(if $(STRIP), $(STRIP) $@)
+
+cli/timelineeditor: cli/timelineeditor.o  cli/cli.o liblsmash.a 
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $<  cli/cli.o -llsmash $(LIBS)
+	-@ $(if $(STRIP), $(STRIP) $@)
+
