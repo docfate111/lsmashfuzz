@@ -1,6 +1,15 @@
-#include "lsmash.h"
+#include "cli.h"
+
 #include <stdio.h>
+#include <stdarg.h>
+#include <string.h>
 #include <stdlib.h>
+#include <inttypes.h>
+
+#include "importer/importer.h"
+/*#include "lsmash.h"
+#include <stdio.h>
+#include <stdlib.h>*/
 int main(int argc, char* argv[]){
 	if(argc!=2){
 		printf("Usage: %s file", argv[0]);

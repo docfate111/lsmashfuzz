@@ -165,6 +165,8 @@ core/write.o: core/write.c common/internal.h common/osdep.h lsmash.h \
  common/utils.h common/memint.h common/bytes.h common/bits.h \
  common/multibuf.h common/list.h core/box.h core/box_type.h core/write.h \
  codecs/mp4a.h codecs/mp4sys.h codecs/description.h
+cli/harness.o: cli/harness.c cli/cli.h config.h common/osdep.h lsmash.h \
+ importer/importer.h
 cli/cli.o: cli/cli.c common/internal.h common/osdep.h lsmash.h \
  common/utils.h common/memint.h common/bytes.h common/bits.h \
  common/multibuf.h common/list.h
